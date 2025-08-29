@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2bpiwndomoug"]
+
+[ext_resource type="PackedScene" uid="uid://c2wj2rhifa24r" path="res://Slides/Slide_Master.tscn" id="1_bofgm"]
+[ext_resource type="Theme" uid="uid://c3sf7224cxgbc" path="res://Theme/My_Themetres.tres" id="2_hasa7"]
+
+[node name="Control" instance=ExtResource("1_bofgm")]
+next_slide = "res://Slides/Slide_02.tscn"
+prev_slide = "res://Slides/Slide_01.tscn"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="." index="4"]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 497.0
+offset_right = 1010.0
+offset_bottom = 663.0
+text = "The goals of this course are to help you:
+"
+fit_content = true
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="." index="5"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 577.0
+offset_right = 1011.0
+offset_bottom = 799.0
+theme = ExtResource("2_hasa7")
+bbcode_enabled = true
+text = "[ul] Understand how to correct or eliminate fall hazards on your job sites related to ladder use."
+fit_content = true
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="." index="6"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 783.0
+offset_right = 1015.0
+offset_bottom = 949.0
+bbcode_enabled = true
+text = "[ul] Understand the OSHA ladder safety requirements."
+fit_content = true
+
+[node name="Next_Button" parent="." index="7"]
+layout_mode = 0
+offset_left = 1622.0
+offset_top = 982.0
+offset_right = 1873.0
+offset_bottom = 1046.0
+
+[node name="Prev_Button" parent="." index="8"]
+visible = false
+layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 251.0
+offset_bottom = 64.0

@@ -1,0 +1,69 @@
+[gd_scene load_steps=3 format=3 uid="uid://csvhbimjybtoo"]
+
+[ext_resource type="PackedScene" uid="uid://c2wj2rhifa24r" path="res://Slides/Slide_Master.tscn" id="1_lswtu"]
+[ext_resource type="Texture2D" uid="uid://kvmv4nf1dn2f" path="res://Images/Chart.png" id="2_ao2tb"]
+
+[node name="Control" instance=ExtResource("1_lswtu")]
+next_slide = "res://Slides/Slide_04.tscn"
+prev_slide = "res://Slides/Slide_02.tscn"
+
+[node name="Introduction" parent="Container" index="0"]
+position = Vector2(1249.27, 259.792)
+scale = Vector2(0.443619, 0.443619)
+texture = ExtResource("2_ao2tb")
+
+[node name="Header" parent="." index="2"]
+offset_top = -8.0
+offset_right = 618.0
+offset_bottom = 1083.0
+
+[node name="Label" parent="Header" index="0"]
+offset_left = 76.0
+offset_top = 191.0
+offset_right = 610.0
+offset_bottom = 873.0
+text = "Why is Preventing Falls from Ladders Important?"
+autowrap_mode = 3
+
+[node name="RichTextLabel" parent="." index="3"]
+offset_left = 659.0
+offset_top = 570.0
+offset_right = 1886.0
+offset_bottom = 794.0
+text = "1. Falls continue to be the leading cause of fatalities in residential construction. "
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." index="4"]
+layout_mode = 0
+offset_left = 660.0
+offset_top = 712.0
+offset_right = 1891.0
+offset_bottom = 847.0
+bbcode_enabled = true
+text = "2. Falls (602) were responsible for 45% of residential construction fatalities from 2003 to 2006. "
+fit_content = true
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="." index="5"]
+layout_mode = 0
+offset_left = 661.0
+offset_top = 859.0
+offset_right = 1636.0
+offset_bottom = 993.0
+bbcode_enabled = true
+text = "3. 135 (22%) were falls from ladders.
+
+"
+fit_content = true
+
+[node name="Next_Button" parent="." index="6"]
+layout_mode = 0
+offset_left = 1640.0
+offset_top = 963.0
+offset_right = 1891.0
+offset_bottom = 1027.0
+
+[node name="Prev_Button" parent="." index="7"]
+layout_mode = 0
+offset_left = 1374.0
+offset_top = 965.0
+offset_right = 1625.0
+offset_bottom = 1029.0

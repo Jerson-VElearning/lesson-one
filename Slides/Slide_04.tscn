@@ -1,0 +1,140 @@
+[gd_scene load_steps=7 format=3 uid="uid://c57m1rtgajp6w"]
+
+[ext_resource type="PackedScene" uid="uid://c2wj2rhifa24r" path="res://Slides/Slide_Master.tscn" id="1_wjkej"]
+[ext_resource type="Texture2D" uid="uid://bflw4tamymqyq" path="res://Images/PreventFalls_Implement.png" id="2_o5epx"]
+[ext_resource type="Texture2D" uid="uid://b5vmgh10nv5sv" path="res://Images/PreventFalls_Understand.png" id="3_hkbux"]
+[ext_resource type="Texture2D" uid="uid://bfak2u2p3f27c" path="res://Images/PreventFalls_Train.png" id="4_4d274"]
+[ext_resource type="Texture2D" uid="uid://bwj15da4bsj16" path="res://Images/PreventFalls_Use.png" id="5_c44da"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qwbu2"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.493912, 0.617204, 0.720383, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Control" instance=ExtResource("1_wjkej")]
+next_slide = "res://Slides/Slide_04.tscn"
+prev_slide = "res://Slides/Slide_03.tscn"
+
+[node name="Introduction" parent="Container" index="0"]
+visible = false
+
+[node name="Header" parent="." index="2"]
+offset_right = 1038.0
+offset_bottom = 271.0
+
+[node name="Label" parent="Header" index="0"]
+offset_right = 1146.0
+offset_bottom = 283.0
+theme_override_font_sizes/font_size = 74
+text = "How do you prevent falls from ladders?"
+autowrap_mode = 3
+
+[node name="RichTextLabel" parent="." index="3"]
+visible = false
+
+[node name="PopUp1" type="Panel" parent="." index="4"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 316.0
+offset_right = 1775.0
+offset_bottom = 441.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qwbu2")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PopUp1" index="0"]
+layout_mode = 0
+offset_left = 199.0
+offset_top = 27.0
+offset_right = 1221.0
+offset_bottom = 101.0
+text = "Implement a comprehensive safety program."
+
+[node name="PreventFallsImplement" type="Sprite2D" parent="PopUp1" index="1"]
+position = Vector2(94, 62.25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_o5epx")
+
+[node name="PopUp2" type="Panel" parent="." index="5"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 465.0
+offset_right = 1775.0
+offset_bottom = 590.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qwbu2")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PopUp2" index="0"]
+layout_mode = 0
+offset_left = 199.0
+offset_top = 27.0
+offset_right = 1221.0
+offset_bottom = 101.0
+text = "Understand OSHA ladder regulations."
+
+[node name="PreventFallsImplement" type="Sprite2D" parent="PopUp2" index="1"]
+position = Vector2(94, 62.25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_hkbux")
+
+[node name="PopUp3" type="Panel" parent="." index="6"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 624.0
+offset_right = 1775.0
+offset_bottom = 749.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qwbu2")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PopUp3" index="0"]
+layout_mode = 0
+offset_left = 199.0
+offset_top = 27.0
+offset_right = 1575.0
+offset_bottom = 101.0
+text = "Train workers to identify hazards associated with ladder use.
+"
+
+[node name="PreventFallsImplement" type="Sprite2D" parent="PopUp3" index="1"]
+position = Vector2(94, 62.25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_4d274")
+
+[node name="PopUp4" type="Panel" parent="." index="7"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 784.0
+offset_right = 1775.0
+offset_bottom = 909.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qwbu2")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PopUp4" index="0"]
+layout_mode = 0
+offset_left = 199.0
+offset_top = 27.0
+offset_right = 1221.0
+offset_bottom = 101.0
+text = "Use safe work practices.
+"
+
+[node name="PreventFallsImplement" type="Sprite2D" parent="PopUp4" index="1"]
+position = Vector2(94, 62.25)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_c44da")
+
+[node name="Next_Button" parent="." index="8"]
+visible = false
+layout_mode = 0
+offset_left = 1615.0
+offset_top = 979.0
+offset_right = 1866.0
+offset_bottom = 1043.0
+
+[node name="Prev_Button" parent="." index="9"]
+layout_mode = 0
+offset_left = 1307.0
+offset_top = 984.0
+offset_right = 1558.0
+offset_bottom = 1048.0

@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://dab0my6ithtnv"]
+
+[ext_resource type="PackedScene" uid="uid://c2wj2rhifa24r" path="res://Slides/Slide_Master.tscn" id="1_emkbc"]
+[ext_resource type="Texture2D" uid="uid://0brq4adm4fy1" path="res://Images/Objectives.jpg" id="2_tkeyy"]
+
+[node name="Control" instance=ExtResource("1_emkbc")]
+next_slide = "res://Slides/Slide_03.tscn"
+prev_slide = "res://Slides/Slide_01.tscn"
+
+[node name="Introduction" parent="Container" index="0"]
+texture = ExtResource("2_tkeyy")
+
+[node name="Label" parent="Header" index="0"]
+text = "Objectives"
+
+[node name="RichTextLabel" parent="." index="3"]
+offset_top = 295.0
+offset_bottom = 450.0
+text = "1. Identify the importance of preventing falls from ladders.
+"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." index="4"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 460.0
+offset_right = 1011.0
+offset_bottom = 610.0
+bbcode_enabled = true
+text = "2. Recognize fall hazards associated with ladder use."
+fit_content = true
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="." index="5"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 619.0
+offset_right = 1049.0
+offset_bottom = 706.0
+bbcode_enabled = true
+text = "3. Identify OSHA requirements for ladders.  "
+fit_content = true
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="." index="6"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 718.0
+offset_right = 1013.0
+offset_bottom = 878.0
+bbcode_enabled = true
+text = "4. Identify work practices for using ladders safely.
+"
+fit_content = true
+
+[node name="Next_Button" parent="." index="7"]
+layout_mode = 0
+offset_left = 1631.0
+offset_top = 971.0
+offset_right = 1882.0
+offset_bottom = 1035.0
+
+[node name="Prev_Button" parent="." index="8"]
+layout_mode = 0
+offset_left = 1336.0
+offset_top = 975.0
+offset_right = 1587.0
+offset_bottom = 1039.0

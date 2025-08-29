@@ -1,0 +1,26 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://c3sf7224cxgbc"]
+
+[ext_resource type="FontFile" uid="uid://b0qkxhyygs16n" path="res://Fonts/Noto_Sans/static/NotoSans-Bold.ttf" id="1_ljsed"]
+[ext_resource type="FontFile" uid="uid://bbdarstndi8if" path="res://Fonts/Noto_Sans/static/NotoSans-BoldItalic.ttf" id="2_nydmr"]
+[ext_resource type="FontFile" uid="uid://bf6s2j0jb4x47" path="res://Fonts/Noto_Sans/static/NotoSans-Italic.ttf" id="3_hh2cf"]
+[ext_resource type="FontFile" uid="uid://bxygvnk01f804" path="res://Fonts/Noto_Sans/static/NotoSans-Regular.ttf" id="4_vnx5a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ljsed"]
+bg_color = Color(0.865745, 0.646983, 0.220623, 1)
+
+[resource]
+Label/font_sizes/font_size = 98
+Label_Header/base_type = &"Label"
+Label_Header/colors/font_color = Color(0.145266, 0.145266, 0.145266, 1)
+Panel_Header/base_type = &"Panel"
+Panel_Header/styles/panel = SubResource("StyleBoxFlat_ljsed")
+RichTextLabel/colors/default_color = Color(0.0962047, 0.0962048, 0.0962047, 1)
+RichTextLabel/font_sizes/bold_font_size = 48
+RichTextLabel/font_sizes/bold_italics_font_size = 48
+RichTextLabel/font_sizes/italics_font_size = 48
+RichTextLabel/font_sizes/mono_font_size = 48
+RichTextLabel/font_sizes/normal_font_size = 48
+RichTextLabel/fonts/bold_font = ExtResource("1_ljsed")
+RichTextLabel/fonts/bold_italics_font = ExtResource("2_nydmr")
+RichTextLabel/fonts/italics_font = ExtResource("3_hh2cf")
+RichTextLabel/fonts/normal_font = ExtResource("4_vnx5a")
